@@ -7,6 +7,13 @@ padding: 0;
 
 }
 
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+
+
 .main_font{
     font-family: 'Open Sans',sans-serif;
 }
@@ -63,4 +70,30 @@ padding: 0;
 .btn_small{
     font-weight: 600;
     padding: 7px 20px;
+}
+
+/* MAIN */
+.container_main{
+    font-family: 'Open Sans',sans-serif;
+}
+   
+.hero_image_container{
+        width: 80%;
+    margin: 0 auto;
+}
+
+.hero_title{
+    font-size: 4rem;
+}
+
+.top_container{
+    background-color: #B4D0E7;
+}
+
+.hero_bottom{
+
+}
+
+.jumbo_image{
+    float: right;
 }
