@@ -210,6 +210,7 @@ clear: both;
    color: #0061FF;
    text-decoration: underline; 
    cursor: pointer;
+   font-weight: 700;
 }
 
 .cut{
@@ -316,7 +317,7 @@ li i{
 }
 
 .operation_coloumn > img{
-    height: 335px;
+    height: 275px;
     width: auto;
 }
 
@@ -336,4 +337,99 @@ li i{
 .operation_desc_dett{
 font-weight: 500;
 font-size: 1.3rem;
+}
+
+/* TEAM LOGHI */
+
+
+.loghi_title{
+font-size: 2.7rem;
+text-align: left;
+}
+
+.container_title > p{
+    margin: 20px 0 40px 0;
+}
+
+
+.loghi_left, .loghi_center, .loghi_right{
+display: inline-block;
+height: 100%;
+}
+.loghi_image{
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(207deg) brightness(107%) contrast(101%);
+  
+}
+
+.loghi_left{
+    width: 30%;
+}
+
+.loghi_center{
+    width: 40%;
+}
+
+.loghi_right{
+    width: 30%;
+}
+
+/* LOGHI COLORI */
+.color-green{
+    background-color: #A2D39B;
+
+}
+
+.color-amarant{
+    background-color: #61082B;
+}
+
+.color-azure{
+    background-color: #0093CE;
+}
+
+.color-red{
+   background-color: #FF1C1C; 
+}
+
+.color-gray{
+    background-color: #F5F5F5;
+}
+
+
+.color-redark{
+   background-color: #D5001F; 
+}
+
+.color-azure_light{
+  background-color: #B4D0E7;  
+}
+
+.color-blue{
+    background-color: #0D2481;
+}
+
+.color-yellow{
+    background-color: #FFD830;
+}
+
+
+/* PROVA GRATUITA */
+
+.prova_gratuita{
+    background-color: #B4D0E7;
+}
+
+.prova_title{
+   color: #61082B; 
+   font-size: 2.5rem;
+}
+
+.prova_container{
+    padding: 100px 0;
+}
+
+.white_btn{
+    float: right;
+    top: 100%;
+    
 }
