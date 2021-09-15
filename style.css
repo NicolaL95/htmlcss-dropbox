@@ -148,25 +148,37 @@ margin-bottom: 10px;
 .business_plan_head > p{
     display: inline-block;
     margin: 40px 15px 20px 0;
+    box-sizing: border-box;
 }
 
 .piano_main_title{
         font-size: 3rem;
 }
 
-.circle_empty, .circle_border{
-    margin-right: 4px;
+
+.circle_empty{
+    height: 18px;
+    width: 18px;
+    margin-right: 1px;
+    display: inline-block;
+    border: 1px solid #D2D2D5;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-bottom: 1px;
 }
 
 .circle_border{
-   color: white ;
-   border: 1px solid #0061FF ;
-   border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    margin-right: 1px;
+    display: inline-block;
+    border: 3px solid #0061FF;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-bottom: 1px;
 }
 
-.circle_empty{
-    color: #D3D3D5;
-}
+
 
 .piano_style{
     display: inline-block;
@@ -368,29 +380,77 @@ height: 100%;
 }
 .loghi_image{
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(207deg) brightness(107%) contrast(101%);
-  
+  height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
+.loghi_imageC{
+ height: 60px;
+}
+    
 
-.loghi_left{
-    width: 30%;
+.loghi_container{
+    background-color: #F5F5F5;
 }
 
 .loghi_center{
-    width: 40%;
+     width: 764px;
 }
 
-.loghi_right{
-    width: 30%;
+
+.loghi_format{
+    height: 283px;
+    width: 283px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-bottom: -5px;
+}
+
+    .format_image{
+    width: 50%;
+    height: 15%;
+    }
+
+    
+
+
+.loghi_citazione{
+    margin-top: 45px;
+}
+
+.loghi_text{
+margin-top: 60px;
+}
+
+.loghi_sep{
+    margin-top: 40px;
+}
+
+.center_container{
+    font-weight: 700;
+    padding: 37px 40px 0px 40px;
 }
 
 /* LOGHI COLORI */
+
+.color-gray{
+    background-color: #F5F5F5;
+    display: inline-block;
+}
+
 .color-green{
     background-color: #A2D39B;
-
+    box-sizing: border-box;
+    border: 10px solid #D0E9CD;
 }
 
 .color-amarant{
     background-color: #61082B;
+        margin-left: -5px;
 }
 
 .color-azure{
@@ -398,12 +458,11 @@ height: 100%;
 }
 
 .color-red{
-   background-color: #FF1C1C; 
+   background-color: #FF1C1C;
+       margin-left: -5px; 
 }
 
-.color-gray{
-    background-color: #F5F5F5;
-}
+
 
 
 .color-redark{
@@ -412,6 +471,7 @@ height: 100%;
 
 .color-azure_light{
   background-color: #B4D0E7;  
+      margin-left: -5px;
 }
 
 .color-blue{
@@ -420,6 +480,7 @@ height: 100%;
 
 .color-yellow{
     background-color: #FFD830;
+        margin-left: -5px;
 }
 
 
