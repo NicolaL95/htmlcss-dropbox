@@ -254,3 +254,41 @@ li i{
 .costo_enterprise{
     font-size: 1.2rem;
 }
+
+/* CONTACT */
+
+.contact{
+    margin: 130px auto 6px auto;
+}
+
+.contact_title{
+    font-size: 1.6rem;
+}
+
+
+.contact_image{
+      height: 600px;
+    width: 800px;
+}
+
+.contact_text{
+   margin: 30px 0 100px 30px;
+    float: right;
+    width: 33%;
+}
+
+
+.contact_text > p{
+    margin: 30px 0 20px 0;
+    font-weight: 700;
+}
+
+.border_white_btn{
+      background-color: white;
+    border: 1px solid;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+  
