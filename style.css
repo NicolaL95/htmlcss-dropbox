@@ -28,6 +28,11 @@ clear: both;
     margin: 0 auto;
 }
 
+.underline{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* HEADER */
 
 .container_header{
@@ -291,4 +296,44 @@ li i{
     font-size: 1.1rem;
     margin-top: 15px;
 }
-  
+
+/* OPERATION */
+
+.operation{
+    margin-top: 70px;
+}
+
+.operation_rows{
+    height: 50%;
+    margin-bottom: 100px;
+}
+
+.operation_coloumn{
+    width: 33%;
+    display: inline-block;
+    padding-right:50px;
+
+}
+
+.operation_coloumn > img{
+    height: 335px;
+    width: auto;
+}
+
+.operation_title{
+    text-align: center;
+    margin-bottom: 40px;
+        font-size: 2.3rem;
+    font-weight: bolder;
+}
+
+.operation_desc_title{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.operation_desc_dett{
+font-weight: 500;
+font-size: 1.3rem;
+}
