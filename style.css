@@ -202,7 +202,7 @@ position: absolute;
     transition: 0.5s;
 }
 
-.btn_middle:hover, .btn_middle_hero:hover,.btn_enterprise:hover{
+.btn_bw:hover{
     filter: brightness(135%);
     cursor: pointer;
 }
