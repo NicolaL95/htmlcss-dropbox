@@ -71,6 +71,15 @@ header{
     width: 50%;
 }
 
+
+.waterfall_menu{
+    position: relative;
+}
+
+.menu_format{
+position: absolute;
+}
+
 .unite{
     word-spacing: 2px;
 }
@@ -119,12 +128,35 @@ header{
     text-align: left;
     width: 100%;
     margin-bottom: 50px;
+        margin-top: 23px;
 }
 
 .top_container{
     background-color: #B4D0E7;
     padding-bottom: 100px;
     margin-bottom: 200px;
+    padding-top: 50px;
+}
+
+.format_container{
+        float: right;
+}
+
+.hero_title:hover  .format_container {
+    display:block ;
+}
+
+.format_container{
+       display: none;
+}
+
+
+.menu_format{
+    position: absolute;
+    margin: -86px 0 0 -357px;
+    background-color: white;
+    padding: 14px 15px 14px 15px;
+    line-height: 33px;
 }
 
 .hero_bottom{
