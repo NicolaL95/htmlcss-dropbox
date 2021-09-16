@@ -47,7 +47,6 @@ header{
     line-height: 29px;
    padding: 25px 25px;
    word-spacing: 30px;
-    font-weight: 600;
     position: fixed;
     width: 100%;
     background-color: white;
@@ -111,29 +110,40 @@ position: absolute;
     padding: 7px 20px;
 }
 
-.format_container{
-       display: none;
-}
-
 
 .menu_format{
-        position: absolute;
-    margin: 49px 0 0 -89px;
+      display: none;
+    position: absolute;
     background-color: white;
-    padding: 14px 15px 14px 15px;
-    line-height: 33px;
-    text-align: left;
-    word-spacing: normal;
+    min-width: 240px;
+    z-index: 1;
     font-weight: 500;
+    margin-top: 20px;
 }
 
-.format_container:hover{
+.menu_format p{
+      color: black;
+    padding: 7.5px 25px 7.5px 33px;
+    text-decoration: none;
     display: block;
+    word-spacing: normal;
+    text-align: left;
+    line-height: 1;
+    cursor: pointer;
+    margin: 7.5px 0;
 }
 
+.menu_format p:hover{
+    background-color: #ddd;
+}
 
-.waterfall_menu:hover > .format_container{
-display: block;
+.waterfall_menu{
+        position: relative;
+            padding-bottom: 22px;
+}
+
+.waterfall_menu:hover > .menu_format{
+    display: block;
 }
 
 /* MAIN */
@@ -160,13 +170,10 @@ display: block;
     padding-top: 50px;
 }
 
-.format_container{
-        float: right;
-}
 
 .hero_bottom{
     width: 400px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .jumbo_image{
@@ -175,15 +182,31 @@ display: block;
     width: 70%;
 }
 
+.btn_middle_hero{
+ margin: 30px 0 10px 0;
+    padding: 8px 11px;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.5s;
+}
+
 
 .btn_middle{
   margin: 30px 0 10px 0;
     padding: 10px 30px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1rem;
     text-align: center;
     width: 100%;
+    transition: 0.5s;
 }
+
+.btn_middle:hover, .btn_middle_hero:hover,.btn_enterprise:hover{
+    filter: brightness(135%);
+    cursor: pointer;
+}
+
 
 .middle_format{
 margin-bottom: 10px;
@@ -193,9 +216,12 @@ margin-bottom: 10px;
   margin-bottom: 32px;
 }
 
+
+
 .dim_arrow{
     font-size: 3rem;
     margin: 45px 0;
+    color: black;
 }
 
 /* PLAN MAIN */
@@ -220,6 +246,7 @@ margin-bottom: 10px;
     border-radius: 50%;
     vertical-align: middle;
     margin-bottom: 1px;
+    cursor: pointer;
 }
 
 .circle_border{
@@ -227,10 +254,11 @@ margin-bottom: 10px;
     width: 18px;
     margin-right: 1px;
     display: inline-block;
-    border: 3px solid #0061FF;
+    border: 4.5px solid #0061FF;
     border-radius: 50%;
     vertical-align: middle;
     margin-bottom: 1px;
+     cursor: pointer;
 }
 
 
@@ -330,6 +358,7 @@ li i{
     font-size: 1rem;
     text-align: center;
     margin: -110px 35px 0 0;
+    transition: 0.5s;
 }
 
 .costo_enterprise{
@@ -373,6 +402,7 @@ li i{
     font-weight: 500;
     font-size: 1.1rem;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 /* OPERATION */
@@ -580,19 +610,37 @@ float: left;
     margin-top: 130px;
 }
 
-.domande_container > hr{
+.domande_format > hr{
     margin: 35px 0;
 }
 
-.domande_container > p{
+.domande_format > .domande_text{
     font-weight: 700;
     display: inline-block;
 }
 
 .symbol{
-        padding-left: 222px;
     font-size: 1.3rem;
+    font-weight: 700;
+    display: inline-block;
+      margin-left: 222px;
 }
+
+.disappear_text{
+    padding: 20px 0;
+    font-weight: 500;
+    display: none;
+    color: #A5AEB6;
+}
+
+.domande_format:hover  .disappear_text{
+    display: block;
+}
+
+.domande_format:hover  .symbol{
+    transform: rotate(180deg);
+}
+
 
 /* Footer */
 
@@ -610,6 +658,9 @@ th, td:not(.no_right){
     padding-right: 90px;
 }
 
+.menu_text > td:hover{
+      text-decoration: underline;
+}
 
 .footer_table{
 padding-top: 100px;
@@ -629,4 +680,8 @@ th{
 .language{
     color: #666666;
     margin-top: 40px;
+}
+
+td > span{
+    cursor: pointer;
 }
