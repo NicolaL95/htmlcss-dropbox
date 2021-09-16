@@ -72,9 +72,6 @@ header{
 }
 
 
-.waterfall_menu{
-    position: relative;
-}
 
 .menu_format{
 position: absolute;
@@ -114,6 +111,31 @@ position: absolute;
     padding: 7px 20px;
 }
 
+.format_container{
+       display: none;
+}
+
+
+.menu_format{
+        position: absolute;
+    margin: 49px 0 0 -89px;
+    background-color: white;
+    padding: 14px 15px 14px 15px;
+    line-height: 33px;
+    text-align: left;
+    word-spacing: normal;
+    font-weight: 500;
+}
+
+.format_container:hover{
+    display: block;
+}
+
+
+.waterfall_menu:hover > .format_container{
+display: block;
+}
+
 /* MAIN */
 
 /* TOP MAIN */
@@ -140,23 +162,6 @@ position: absolute;
 
 .format_container{
         float: right;
-}
-
-.hero_title:hover  .format_container {
-    display:block ;
-}
-
-.format_container{
-       display: none;
-}
-
-
-.menu_format{
-    position: absolute;
-    margin: -86px 0 0 -357px;
-    background-color: white;
-    padding: 14px 15px 14px 15px;
-    line-height: 33px;
 }
 
 .hero_bottom{
