@@ -60,10 +60,11 @@ header{
 .cells_container{
     width: 33%;
     display: inline-block;
+    padding-right: 50px;
 }
 
-.cells_container:not(.not_right){
-    padding-right: 50px;
+.not_right{
+    padding-right: 0px;
 }
 
 .desc_cells{
